@@ -1,0 +1,12 @@
+{
+  "name": "cheerlights2mqtt",
+  "version": "1.0.0",
+  "description": "get the twitter messages @cheerlights and send them back to twitter",
+  "main": "index.js",
+  "author": "Gerald Estadieu",
+  "license": "MIT",
+  "dependencies": {
+    "mqtt": "^2.17.0",
+    "twitter": "^1.7.1"
+  }
+}
