@@ -9,7 +9,7 @@ This code will be used for IoT projects (more related code coming soon) with Aru
 1.  Rename config-template.js to config.js
 2.  Add your personal info in the config.js file (twitter keys, mqtt broker...)
 3.  run `yarn` to install packages
-4.  Ready to run? `yarn run`
+4.  Ready to run? `yarn run start` or `node index.js`
 
 ## Resources
 
