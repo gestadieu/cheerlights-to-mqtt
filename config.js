@@ -1,5 +1,19 @@
 let config = {
   cheerlights: {
+    colors1: {
+      red: { hex: 'ff0000' },
+      green: { hex: '00ff00' },
+      blue: { hex: '0000ff' },
+      cyan: { hex: '00FFFF' },
+      white: { hex: 'ffffff' },
+      warmwhite: { hex: 'FDF5E6' },
+      oldlace: { hex: 'FDF5E6' },
+      purple: { hex: '800080' },
+      magenta: { hex: 'FF00FF' },
+      yellow: { hex: 'FFFF00' },
+      orange: { hex: 'FFA500' },
+      pink: { hex: 'FFC0CB' }
+    },
     colors: [
       'red',
       'green',
@@ -43,7 +57,7 @@ let config = {
     password: '',
     publish_topic: 'cheerlights/color',
     client_topic: 'cheerlights/clients',
-    client: 'nodeapp-cheerlight-mqtt-gateway'
+    client: 'nodeapp-cheerlight-mqtt-gateway-heroku'
   }
 };
 
