@@ -12,16 +12,26 @@ let mqtt = require('mqtt');
 let config = require('./config');
 
 // Twitter Settings
-let twitter = new Twitter(config.twitter);
+let twitter = new Twitter({
+  consumer_key: config.twitter.consumer_key || process.env.TWITTER_CONSUMER_KEY,
+  consumer_secret:
+    config.twitter.consumer_secret || process.env.TWITTER_CONSUMER_SECRET,
+  access_token_key:
+    config.twitter.access_token_key || process.env.TWITTER_ACCESS_TOKEN_KEY,
+  access_token_secret:
+    config.twitter.access_token_secret ||
+    process.env.TWITTER_ACCESS_TOKEN_SECRET
+});
+
 let stream = twitter.stream('statuses/filter', {
   track: '@cheerlights'
 });
 
 // MQTT Settings
-let client = mqtt.connect(config.mqtt.host, {
+let client = mqtt.connect(config.mqtt.host || process.env.MQTT_HOST, {
   clean: false,
-  username: config.mqtt.username,
-  password: config.mqtt.password,
+  username: config.mqtt.username || process.env.MQTT_USERNAME,
+  password: config.mqtt.password || process.env.MQTT_PWD,
   clientId: config.mqtt.client
 });
 
