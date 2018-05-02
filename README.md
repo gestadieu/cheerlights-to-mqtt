@@ -11,6 +11,8 @@ This code will be used for IoT projects (more related code coming soon) with Aru
 3.  run `yarn` to install packages
 4.  Ready to run? `yarn run start` or `node index.js`
 
+If you are using a cloud service such as Heroku, add twitter keys and mqtt brokers info into your process.env.
+
 ## Resources
 
 * Cheerlights API: https://cheerlights.com/cheerlights-api/
