@@ -1,19 +1,5 @@
 let config = {
   cheerlights: {
-    colors1: {
-      red: { hex: 'ff0000' },
-      green: '00ff00',
-      blue: '0000ff',
-      cyan: '00FFFF',
-      white: 'ffffff',
-      warmwhite: 'FDF5E6',
-      oldlace: 'FDF5E6',
-      purple: '800080',
-      magenta: 'FF00FF',
-      yellow: 'FFFF00',
-      orange: 'FFA500',
-      pink: 'FFC0CB'
-    },
     colors: [
       'red',
       'green',
